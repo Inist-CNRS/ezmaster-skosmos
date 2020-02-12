@@ -1,6 +1,6 @@
 {
   "name": "ezmaster-skosmos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "[Ezmasterization](https://github.com/Inist-CNRS/ezmaster) of skosmos",
   "scripts": {
     "insertversion:readme": "sed -i \"s#\\(inistcnrs/ezmaster-skosmos:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" README.md",
