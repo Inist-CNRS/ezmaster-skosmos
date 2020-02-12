@@ -1,0 +1,21 @@
+{
+  "name": "ezmaster-skosmos",
+  "version": "1.0.0",
+  "description": "[Ezmasterization](https://github.com/Inist-CNRS/ezmaster) of skosmos",
+  "scripts": {
+    "insertversion:readme": "sed -i \"s#\\(inistcnrs/ezmaster-skosmos:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" README.md",
+    "insertversion:makefile": "sed -i \"s#\\(inistcnrs/ezmaster-skosmos:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" Makefile",
+    "version": "npm run insertversion:readme && npm run insertversion:makefile && git add README.md Makefile",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inist-CNRS/ezmaster-skosmos.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inist-CNRS/ezmaster-skosmos/issues"
+  },
+  "homepage": "https://github.com/Inist-CNRS/ezmaster-skosmos#readme",
+  "dependencies": {}
+}
